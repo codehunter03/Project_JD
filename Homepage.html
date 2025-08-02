@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ResReady - Home</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: #f5f5f7;
+      color: #1d1d1f;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 2rem;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .nav-buttons button {
+      margin-left: 1rem;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .login {
+      background: transparent;
+      border: 1px solid #000;
+      color: #000;
+    }
+
+    .signup {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .nav-buttons button:hover {
+      opacity: 0.85;
+    }
+
+    .hero {
+      max-width: 800px;
+      margin: 100px auto;
+      text-align: center;
+      padding: 0 1rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    .hero .signup-btn {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      background-color: #0071e3;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero .signup-btn:hover {
+      background-color: #005bb5;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">ResReady</div>
+    <div class="nav-buttons">
+      <button class="login" onclick="window.location.href='login_page.html'">Login</button>
+      <button class="signup-btn" onclick="window.location.href='signup_page.html'">Sign Up</button>
+
+    </div>
+  </header>
+
+  <section class="hero">
+  <h1>Apply for a job with the most relevant resume, CV, or cover letter</h1>
+  <p>Here's a one-stop solution for you! Sign up now and create your perfect job application assets in minutes.</p>
+  <button class="signup-btn" onclick="window.location.href='signup_page.html'">Get Started</button>
+</section>
+
+</body>
+</html>
